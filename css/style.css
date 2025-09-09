@@ -9,26 +9,85 @@ body {
 --rosy-brown: #bd9ea0ff;
 --liver: #754f44ff;
 --butterscotch: #db9b57ff;
---moss-green: #908451ff; */
+--moss-green: #908451ff; 
+
+/* Light Mode 
+--mimi-pink: #ffd6e4ff;
+--rosy-brown: #bd9ea0ff;
+--liver: #754f44ff;
+--butterscotch: #db9b57ff;
+--moss-green: #908451ff;
+
+Dark Mode
+--russian-violet: #3a015cff;
+--palatinate: #4f0147ff;
+--dark-purple: #35012cff;
+--dark-purple-2: #290025ff;
+--dark-purple-3: #11001cff;
+
+*/
+
+@font-face {
+    font-family: 'modesto'; 
+    src: url('./fonts/modesto') format('truetype');
+    font-weight: 100 900; /* Variable font weight range */
+    font-style: normal;
+}
+@font-face {
+  font-family: 'baskervville';
+  src: url('./fonts/Baskervville-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Variable font weight range */
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'baskervville';
+  src: url('./fonts/Baskervville-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'scala';
+  src: url('./fonts/ufonts.com_scala-sans-regular.ttf') format('truetype');
+  /*font-weight: 100 900;*/
+  font-style: normal;
+}
+
 
 h1,h2 {
-
-    color: #db9b57ff;
-    font-weight: bold;
+  font-family: "baskervville";
+  font-size: 50px;
+  color: #db9b57ff;
+  font-weight: bold;
 
 }
-p {
-    color: #908451ff;
-    font-weight:normal;
+h1{
+    font-size: 100px;
+}
+p, li {
+  font-family: "scala";
+  color: #908451ff;
+  font-weight:normal;
+}
+
+
+footer p {
+  font-family: "scala";
+  color: whitesmoke;
+  font-weight:small;
 }
 
 #center {
-    text-align: center;
+  text-align: center;
 }
 footer {
-    color: #db9b57ff;
-    position: fixed;
-    bottom:0; 
+
+    /*position: fixed;*/
+  background-color: #db9b57ff;
+    /*bottom:0;*/
 }
 
 /* From Uiverse.io by andrew-demchenk0 */ 
